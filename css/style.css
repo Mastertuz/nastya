@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+
+body{
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.container{
+    max-width: 1230px ;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 100vh;
+}
+
+.header-top{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 110px;
+}
+
+
+.logo{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    color: #fff;
+
+}
+
+.menu__list{
+    display: flex;
+}
+
+.menu__list-item{
+    padding-right: 40px;
+    
+}
+
+.menu__list-link{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    transition: all .5s;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+    font-weight: normal;
+    
+}
+
+.menu__list-link:hover{
+     border-bottom: 1px solid #fff;
+}
+
+.header-top__btn-link{
+    padding: 10px 20px;
+    background-color: #676CDB;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px; 
+    font-family: 'Poppins', sans-serif;
+    transition: all .5s;
+}
+
+
+
+
+.header-content__title{
+font-family: 'Playfair Display', serif;
+font-weight: 700;
+font-size: 90px;
+line-height: 108px;
+color: #fff;
+margin-bottom: 5px;
+}
+
+.header-content__subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 404px;
+    margin-bottom: 40px;
+}
+
+.header-content__link{
+    padding: 20px 40px;
+    background-color: #676CDB;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+.header-content__link::before{
+    position: absolute;
+    content: "";
+    height: 20px; 
+    width: 20px;
+    left: 15px;
+    top: 24px;
+    background-image: url('../images/email-icon.svg');
+    background-repeat: no-repeat;
+}
+.header__social{
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom{
+    margin-top: 50px;
+    
+
+}
+
+
+ 
+ .header__social-link{
+    margin: 0 10px
+ }
+
+ @media(max-width:700px){
+     .header-content__title{
+        font-size: 60px;
+        line-height: 80px;
+     }
+     .header-top__btn-link{
+        padding: 8px 15px;
+        font-size: 16px;
+     }
+     .logo{
+         display: none;
+     }
+     .menu__list-link{
+         font-size: 16px;
+     }
+     
+ }
+
+ @media(max-width:500px){
+     .menu__list-item{
+         padding-right: 10px;
+     }
+     .header-top__btn-link{
+         font-size: 16px;
+         
+     }
+     .header-content__title{
+         font-size: 52px;
+     }
+ }
+
+
+
+
